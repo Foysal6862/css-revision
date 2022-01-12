@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom property</title>
+    <style>
+        :root{
+            --main-color: blue;
+            --footer-border: 2px solid tomato;
+        }
+        header h2 {
+            color: var(--main-color);
+        }
+        footer{
+            border: var(--footer-border);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rerum laudantium unde nostrum a debitis illum fugit laborum earum ipsam?</p>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p><small>copyright @ Lorem ipsum dolor sit.</small></p>
+    </footer>
+</body>
+</html>

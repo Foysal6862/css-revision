@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <style>
+        p~span{
+            background-color: yellow;
+            color: white;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        It is different from the Descendant selector as the Descendant selector selects that element matching the second
+        element that is a descendant of the element matching the first element ( that can be the child, a child of its
+        child etc ).</h1>
+    <h1>
+        General Sibling Selector: It selects only the first element if it follows the first element and both children
+        are of the same parent element. It is not necessary that the second element immediately follows the first
+        element. </h1>
+    <h1>
+        Syntax: Changes to the span element content which follows paragraph tag and both have same parent tag.
+    </h1>
+
+    <p>Coding is
+        <span>fun!</span>
+    </p>
+
+    <h1>GeeksforGeeks</h1>
+
+    <p>learn</p>
+
+    <span>Last span tag01.</span>
+    <span>Last span tag02.</span>
+</body>
+
+</html>

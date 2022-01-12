@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Child Selector</title>
+</head>
+    <style>
+        div > span{
+            background-color: turquoise;
+            color: white;
+            font-weight: 800;
+        }
+    </style>
+<body>
+    <h1>Direct Child Selector: It selects any element matching the second element that is a direct child of an element matching the first element. The element matched by the second selector must be the immediate children of the elements matched by the first selector. </h1>
+    <div>
+        <span>inside div and is inside span</span>
+
+        <p>inside div but not inside span
+            <span>inside div p</span>
+        </p>
+
+    </div>
+    <span>not inside div</span>
+</body>
+
+</html>
